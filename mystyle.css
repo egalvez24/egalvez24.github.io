@@ -1,0 +1,18 @@
+body {
+        margin: 0;
+        padding: 0;
+}
+
+header.first {
+        background-color: powderblue;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        font-family: monospace;
+}
+
+
+ul.test {
+        display: grid;
+        padding: 5px;
+}
