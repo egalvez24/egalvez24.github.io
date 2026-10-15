@@ -4,15 +4,34 @@ body {
 }
 
 header.first {
-        background-color: powderblue;
+        background-color: rgb(179, 170, 143);
         width: 100%;
         padding: 20px;
         text-align: center;
         font-family: monospace;
 }
 
+ul.bar {
+        list-style-type: none;
+        background-color:hsla(51, 23%, 94%, 0.993);
+        margin: 0;
+        padding: 0;
+        display: flex;
 
-ul.test {
-        display: grid;
-        padding: 5px;
+}
+
+ul li {
+        float: left;
+}
+
+ul li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 15px 10px;
+        text-decoration: none;
+}
+
+ul li a:hover {
+        background-color: rgb(212, 210, 204);
 }
