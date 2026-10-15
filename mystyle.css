@@ -41,3 +41,9 @@ h2.font {
 p.para1 {
         text-align: center;
 }
+
+.hr {
+        background-color: rgb(179, 170, 143);
+        height: 5px;
+        border: none;
+}
