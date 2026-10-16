@@ -36,6 +36,8 @@ ul li a:hover {
         background-color: rgb(212, 210, 204);
 }
 
+/* Below is the CSS for the homepage */
+
 div.flex-container {
         display: flex;
         flex-direction: row;
@@ -93,3 +95,7 @@ footer a {
 footer a:hover {
         background-color: rgb(150, 147, 140);
 }
+
+/*Homepage CSS ends here. Topic pages are below */
+
+
