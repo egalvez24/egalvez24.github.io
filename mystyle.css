@@ -53,6 +53,10 @@ section {
         text-align: center;
 }
 
+#ol {
+        list-style: square inside;
+}
+
 
 img.img1 {
         display: block;
@@ -61,13 +65,21 @@ img.img1 {
         height: 70px;
 }
 
-footer {
-        background-color: rgb(240, 211, 124);
-        box-sizing: border-box;
+footer.flex-container {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        gap: 1em;
+        font-family: 'Courier New', Courier, monospace;
         width: 100%;
         padding: 20px;
-        text-align: center;
-        font-family: 'Courier New', Courier, monospace;
+}
+
+footer {
+        background-color: rgb(179, 170, 143); 
+}
+
+footer a {
         text-decoration: none;
 }
 
