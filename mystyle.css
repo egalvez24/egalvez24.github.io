@@ -74,13 +74,14 @@ img.img1 {
 }
 
 footer.flex-container {
-        box-sizing: border-box;
         display: flex;
         justify-content: center;
         gap: 1em;
-        font-family: 'Courier New', Courier, monospace;
         width: 100%;
         padding: 20px;
+        position: fixed;
+        bottom: 0px;
+        font-family: 'Courier New', Courier, monospace;
         background-color: rgb(179, 170, 143); 
 }
 
