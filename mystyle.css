@@ -55,6 +55,14 @@ section {
 
 #ol {
         list-style: square inside;
+        width: auto;
+        margin: auto;
+        padding: 0;
+}
+
+#anotherol {
+        list-style: square outside;
+        text-align: left;
 }
 
 
