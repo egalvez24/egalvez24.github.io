@@ -4,6 +4,7 @@ body {
 }
 
 header {
+        box-sizing: border-box;
         background-color: rgb(179, 170, 143);
         width: 100%;
         padding: 20px;
@@ -15,8 +16,9 @@ ul.bar {
         list-style-type: none;
         background-color:hsla(51, 23%, 94%, 0.993);
         margin: 0;
-        padding: 0;
+        padding: 15px;
         display: flex;
+        gap: 5px;
         justify-content: center;
 
 }
@@ -41,7 +43,7 @@ div.flex-container {
 }
 
 section {
-        flex: auto;
+        flex: 1;
         border: 5px solid rgb(233, 218, 170);
         border-width: 5px 5px;
         border-radius: 10px;
@@ -53,7 +55,22 @@ section {
 
 
 img.img1 {
-        display: flex;
+        display: block;
+        margin: auto;
         width: 70px;
         height: 70px;
+}
+
+footer {
+        background-color: rgb(240, 211, 124);
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-decoration: none;
+}
+
+footer a:hover {
+        background-color: rgb(150, 147, 140);
 }
