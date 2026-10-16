@@ -36,29 +36,24 @@ ul li a:hover {
 div.flex-container {
         display: flex;
         flex-direction: row;
-        margin: 20px;
-        gap: 3em;
+        margin: 50px;
+        gap: 2em;
 }
 
-
-h2.font {
+section {
+        flex: auto;
+        border: 5px solid rgb(233, 218, 170);
+        border-width: 5px 5px;
+        border-radius: 10px;
+        padding: 10px;
         font-family: monospace;
+        font-size: 15px;
         text-align: center;
 }
+
 
 img.img1 {
         display: flex;
-        float: center;
         width: 70px;
         height: 70px;
-}
-
-p.para1 {
-        text-align: center;
-}
-
-.hr {
-        background-color: rgb(179, 170, 143);
-        height: 5px;
-        border: none;
 }
