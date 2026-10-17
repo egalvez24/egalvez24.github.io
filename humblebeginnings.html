@@ -29,8 +29,7 @@
 
   <div class="flex-container">
    <section>
-      <h2>Humble Beginnings of of HTTP "0.9"</h2>
-      <img src="images/HTTP.png" alt="HTTP LOGO" class="img1">
+      <h2>Humble Beginnings of HTTP - "0.9"</h2>
       <p>HTTP was first initiated by Tim Berners-Lee in 1991 at CERN as a proposal to just transfer hypertext documents. 
         For this idea to be completed, the early developers had to create a new TCP/IP application protocol. 
         This version would then pick up the name “HTTP 0.9”. (This wasn't an official title). This version 
@@ -38,12 +37,23 @@
         HTTP server using only TCP (Transfer Control Protocol). This client of HTTP also used the GET method to request; 
         however, the response came back with no header, metadata, and with the connection closing. The response was only an HTML document, nothing else. 
       </p>
+      <p>
+         This version of HTTP “0.9” was very limited and simple. 
+         The early developers however sought to make “0.9” bigger than intended. 
+         They were preparing to unleash the biggest project of the 20th century for 
+         the World Wide Web. This push of the new HTTP would meet expectations of the 
+         growing web and execute quicker than just a simple one-line connection.
+      </P>
    </section>
 
    <section>
       <h2>HTTP 1.0</h2>
-      <img src="images/HTTP.png" alt="HTTP LOGO" class="img1">
-      <p>After creating HTTP “0.9”, Tim Berners-Lee and his team at CERN had paved the way for the future introducing HTTP 1.0.
+      <p>HTTP 1.0 was a huge success. From the skeletal foundation of 0.9, the web 
+        was entering a new era of protocols and document transfers. 
+        From this success, groups started to implement their own protocols and 
+        even lists on how to maneuver HTTP 1.0.</p>
+
+      <p>Tim Berners-Lee and his team at CERN had paved the way for the future introducing HTTP 1.0.
         Published in 1996, this version of HTTP had big improvements from its predecessor. 
         This version of HTTP 1.0 introduced a wide variety of options: More capable web servers and clients, opening doors to other media than just hypertext documents, 
         and even retain backwards compatibility with “0.9”. Other than just hypertext links, it had adopted MIME, (Multipurpose Internet Mail Extensions) 
@@ -54,13 +64,33 @@
       </p>
    </section>
 
-
-   <!--pick up here-->
    <section>
-      <h2>Keyterms of HTTP</h2>
-      <img src="images/HTTP.png" alt="HTTP LOGO" class="img1">
-      <p>HTTP 0.9 VS HTTP 1.0</p> 
-         <th> HTTP</th>
+      <h2>HTTP 0.9 VS HTTP 1.0</h2>
+      <p><strong>Since it was the beginning of HTTP, both versions were limited
+         but they had their huge differences</strong></p> 
+        <table>
+         <tr>
+            <th>HTTP 0.9</th>
+            <th>HTTP 1.0</th>
+         </tr>
+         <tr>
+            <td>Only hypertext documents</td>
+            <td>Adopted MIME, (Multipurpose Internet Mail Extensions) so the ability 
+               to request videos, images, stylesheets were new to the public</td>
+         </tr>
+         <tr>
+            <td>Responses came back with no header and metadata</td>
+            <td>Introduced request and response headers(HEAD method)</td>
+         </tr>
+         <tr>
+            <td>Support with GET post</td>
+            <td>Established more methods like DELETE and POST</td>
+         </tr>
+         <tr>
+            <td>HTTP 0.9 was is the skeletal foundation</td>
+            <td>HTTP 1.0 used 0.9 for it's foundation and expand from there</td>
+         </tr>
+        </table>
    </section>
  </div>
 

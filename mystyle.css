@@ -64,10 +64,30 @@ section {
 }
 
 #anotherol {
-        list-style: square outside;
-        text-align: left;
+        list-style: square inside;
+        text-align: center;
+        width: auto;
+        margin: auto;
+        padding: 0;
 }
 
+table, th, td {
+        border: 1px solid;
+        padding: 5px;
+}
+
+table {
+        border-collapse: collapse;
+        width: auto;
+}
+
+th, td {
+        text-align: center;
+}
+
+tr:hover {
+        background-color: rgb(148, 132, 108);
+}
 
 img.img1 {
         display: block;
