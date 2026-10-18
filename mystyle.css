@@ -135,6 +135,13 @@ img.img2 {
         padding: 75px;
 }
 
+img.img3 {
+        display: block;
+        width: 375px;
+        height: 250px;
+        padding: 75px;
+}
+
 .h4 {
         text-decoration-line: underline;
 }
