@@ -179,3 +179,16 @@ p.aboutme {
         margin: auto;
         padding: 0;
 }
+/*About me CSS ends here. References and Sources starts here */
+
+p.refer {
+        width: 20%;
+        padding: 5px;
+        margin: auto;
+        text-decoration-line: underline;
+
+}
+
+#prefer {
+        color: red;
+}
