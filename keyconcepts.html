@@ -22,21 +22,39 @@
 
   <div class="flex-container">
    <section>
-      <h2>Key Concepts</h2>
-      <p class="key">
-         HTTP is a key foundation of the World Wide Web that paved way 
-        for expansion of what we use today and for upcoming advancements.
-        HTTP is known as the “request-response” language. A series of information 
-        being transferred back and forth between the browser (referred to as client) 
-        and browser-server. Typically, it's the communication we initiate with the browser (Chrome, Safari, Firefox, etc.) 
-        that sends an HTTP request to the server that's hosting our content. 
-        Then the server responds with an HTTP back to our browser.
+      <p class="keyset">
+         <strong>Header Compression</strong> The practice of small files
+         loading quicker than larger ones. This atrribute eliminates a 
+         few bytes from HTTP packets to load faster.
+      </p>
+
+      <p class="keyset">
+         <strong>Multiplexing</strong> The attribute of a client requesting 
+         information and the web server responding with multiple streams of 
+         data all at once to the client. Instead of sending data on by one 
+         like. A unique feature is the involvement of developers assigning 
+         each data stream as weighted value. (These unique weighted values 
+         tell which data to render first.)
+      </p>
+
+      <p class="keyset">
+         <strong>APIs</strong> An HTTP API (Representational State Transfer)
+         is any API that uses HTTP for communication between the client and
+         web server. They don't follow a design pattern. Examples - the REST 
+         API. This is API uses the foundation of HTTP requests.  
+      </p>
+
+      <p class="keyset">
+         <strong>Keepalive Connections</strong> keepalive connections. 
+         A way to reduce latency of a HTTP request. The basis of this approach 
+         was to allow the client create another request without having to end 
+         the connection. This can be overridden by Connection Close.
       </p>
       <p class="keyset">
          <strong>QUIC</strong> was not mandatory since HTTPs already 
          made sites encrypted. However, this option optimized security when 
          optional. This feature also prevented attacks like DoS and 
-         Man-in-the-Middle
+         Man-in-the-Middle. Originally developed by Google.
       </p>
    </section>
  </div>
