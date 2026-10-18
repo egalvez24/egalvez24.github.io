@@ -3,12 +3,6 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mystyle.css">
-    <link rel="topicpage" href="humblebeginnings.html">
-    <link rel="secondtopic" href="httpversions.hmtl">
-    <link rel="secondtopic" href="futurehttp.html">
-    <link rel="key" href="keyconcepts.hmtl">
-    <link rel="about" href="aboutme.hmtl">
-    <link rel="reference" href="references.hmtl">
     <title>HTTP Research</title>
 </head>
 <body>
@@ -30,44 +24,55 @@
   <div class="flex-container">
    <section>
       <h2>HTTP 1.1</h2>
-      <img src="images/HTTP.png" alt="HTTP LOGO" class="img1">
-      <p>HTTP is a key foundation of the World Wide Web that paved way 
-        for expansion of what we use today and for upcoming advancements.
-        HTTP is known as the “request-response” language. A series of information 
-        being transferred back and forth between the browser (referred to as client) 
-        and browser-server. Typically, it's the communication we initiate with the browser (Chrome, Safari, Firefox, etc.) 
-        that sends an HTTP request to the server that's hosting our content. 
-        Then the server responds with an HTTP back to our browser.
+      <img src="images/HTTP1.1.png" alt="HTTP 1.1 Example" class="img2">
+      <p>In 1997, after numerous flaws appearing in HTTP 1.0, 
+        the World Wide Web was introduced with HTTP 1.1. Now an official 
+        IETF Internet standard, it was defined in RFC 2068. The wait is 
+        finally over, and HTTP swept its past predecessors.
       </p>
+<hr>
+      <h4 class="h4">Features</h4>
+      <p>
+         <b>HTTP 1.1 is still used to this day</b> despite being an old version 
+         of today's web interface. It patched up protocol failures from its 
+         past versions and introduced optimized key elements like <i>keepalive</i> 
+         connections. A way to reduce latency of a HTTP request.
+      </p>
+      <p>
+         <strong>Reuqest Piplining</strong> was an effective way to keepalive
+         connections. this element introduced the idea of a client having 
+         the ability to send multiple request to the server without having 
+         to wait for the first request
+      </p>
+<hr>
+      <h5>Extended Features</h5>      
+         <ol class="ol">
+                  <li><strong>Better Caching and Proxying Support</strong></li>
+                  <li><strong>Chunked Transfer Encoding</strong></li>
+                  <li><strong>Security</strong></li>
+         </ol> 
    </section>
 
    <section>
-      <h2>HTTP/2</h2>
-      <img src="images/HTTP.png" alt="HTTP LOGO" class="img1">
-      <p>HTTP consist more than just requesting and responding. HTTP needs various layers to come together for it to function 
-         properly. HTTP isn't just a block of saying “I want this content”, but it consist of a header and body with specific 
-         detail in what the client is looking for. Going one step further, HTTP is also broken down into methods used by many.
-         In addition, there are 5 versions of HTTP:</p>
-            <ol id="ol">
-                  <li><strong>HTTP 0.9</strong></li>
-                  <li><strong>HTTP 1.0</strong></li>
-                  <li><strong>HTTP/1.1</strong></li>
-                  <li><strong>HTTP/2</strong></li>
-                  <li><strong>HTTP/3</strong></li>
-            </ol> 
+      <h2 class="h2">HTTP/2</h2>
+      <p>Released in 2015, it was the new and revised version of 1.1, 
+         Meeting expectations to the growing web. Offering faster rates and 
+         data transfer responses. There are multiple ways HTTP/2 was faster, 
+         through prioritizing content during the loading phase.
+      </p>
    </section>
 
    <section>
       <h2>HTTP/3</h2>
       <img src="images/HTTP.png" alt="HTTP LOGO" class="img1">
       <p>Key terms to look out for:</p> 
-         <ol id="anotherol">
+         <ul id="anotherul">
             <li><strong>GET</strong></li>
             <li><strong>POST</strong></li>
             <li><strong>APIs</strong></li>
             <li><strong>Keepalive</strong></li>
             <li><strong>QUIC</strong></li>
-         </ol>
+         </ul>
       <p>These terms are correlated wiht HTTP and its' development.</p>
    </section>
  </div>
