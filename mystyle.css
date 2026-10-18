@@ -122,17 +122,17 @@ tr:hover {
 /*Humble Beginnings CSS ends here. Versions of HTTP starts here */
 
 img.img2 {
-        display: block;
-        width: 375px;
+        margin: auto;
+        width: 370px;
         height: 250px;
         padding: 75px;
 }
 
 img.img3 {
-        display: block;
-        width: 375px;
-        height: 250px;
-        padding: 75px;
+        margin: auto;
+        width: 350px;
+        height: 175px;
+        padding: 70px;
 }
 
 .h4 {
