@@ -160,4 +160,18 @@ h2 {
         height: auto;
         padding: 5px;
 }
+/*HTTP Version CSS ends here. Key Concept starts here */
 
+p.key {
+        border: 5px solid #e2d3bc;
+        border-style: inset
+}
+
+
+p.keyset {
+        background-color: #e7e6e5;
+        width: 15%;
+        border-left-style: solid;
+        padding: 5px;
+        text-align: left;
+}
