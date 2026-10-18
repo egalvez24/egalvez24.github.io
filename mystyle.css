@@ -130,9 +130,9 @@ tr:hover {
 
 img.img2 {
         display: block;
-        margin: auto;
-        width: 150px;
-        height: 95px;
+        width: 375px;
+        height: 250px;
+        padding: 75px;
 }
 
 .h4 {
@@ -153,3 +153,4 @@ h2 {
         height: auto;
         padding: 5px;
 }
+
