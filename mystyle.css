@@ -197,18 +197,18 @@ p.refer {
 
 div.container {
         display: flex;
-        flex-direction: row;
-        background-color: rgb(160, 151, 151);
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: rgb(255, 250, 228);
         margin: 50px;
         gap: 2em;
 }
 
 button {
         display: flex;
-        justify-content: center;
         border-radius: 10px;
         width: auto;
         height: auto;
-        background-color: #a3865b;
+        background-color: #dbd6cf;
         
 }
