@@ -195,7 +195,7 @@ p.refer {
 
 /*About me CSS ends here. Self-Assessment Quiz starts here */
 
-div.container {
+div.question-container {
         display: flex;
         flex-direction: column;
         border-radius: 10px;

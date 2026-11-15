@@ -22,16 +22,36 @@
     </ul>
  </nav>
 
-  <div class="container">
+  <div class="question-container">
    <section>
-      <h1>Self-Assessment Quiz</h1>
-      <p id="demo"></p>
+      <fieldset>
+         <h1>Self-Assessment Quiz for HTTp</h1>
+            <form action ="action_page.php">
+                  <label for="fname">Full Name:</label> <br>
 
-      <button type="button" onclick="myFunction()">Answer 1</button>
-      <button type="button" onclick="myFunction()">Answer 1</button>   
-      <button type="button" onclick="myFunction()">Answer 1</button>   
-      <button type="button" onclick="myFunction()">Answer 1</button>   
-
+                  <legend>Question 1</legend>
+                     <label for="Q1">What does HTTP stand for?</label>
+                        <input type="text" id="Q1" name="Q1">
+                  <legend>Question 2</legend>
+                     <label for="Q2">When was HTTP created?</label>
+                        <input type="text" id="Q2" name="Q2">
+                  <legend>Question 3</legend>
+                     <label for="Q3">What was the "first" version of HTTP?</label>
+                        <input type="text" id="Q3" name="Q3">
+                  <legend>Question 4</legend>
+                   <label for="Q4">When was HTTP created?</label>
+                        <input type="radio" id="" name="Q4">
+                  <legend>Question 5</legend>
+                     <label for="Q5">When was HTTP created?</label>
+                        <input type="radio" id="Q5" name="Q5">
+                  <legend>Question 6</legend>
+                     <label for="Q6">When was HTTP created?</label>
+                        <input type="radio" id="Q6" name="Q6">
+                  <legend>Question 7</legend>
+                     <label for="Q7">When was HTTP created?</label>
+                        <input type="checkbox" id="Q7" name="Q7">
+            </form>
+      </fieldset>
    </section>
  </div>
    <footer class="flex-container">
