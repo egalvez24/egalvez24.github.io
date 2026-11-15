@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <h1>Humble Beginnings</h1>
+    <h1>Self-Assessment Quiz</h1>
   </header>
   <nav>
      <ul class="bar">
@@ -16,7 +16,7 @@
         <li><a href="humblebeginnings.html">Humble Beginnings</a></li>
         <li><a href="httpversions.html">Modern Versions of HTTP</a></li>
         <li><a href="keyconcepts.html">Key Concepts</a></li>
-        <li><a href="quiz.html">Self-Assesment Quiz</a></li>
+        <li><a href="quiz.html">Self-Assessment Quiz</a></li>
         <li><a href="aboutme.html">About Me</a></li>
         <li><a href="references.html">References and Sources</a></li>
     </ul>
@@ -24,11 +24,11 @@
 
   <div class="question-container">
    <section>
-      <h1>Self-Assessment Quiz for HTTP</h1>
+      <h2>HTTP Quiz</h2>
          
                <form action ="action_page.php">
                      <label for="fname">Full Name:</label> <br>
-                         <input type="text" id="Q1" name="Q1">
+                         <input type="text" id="fname" name="fname">
          <fieldset>
                      <legend>Question 1</legend>
                         <label for="Q1">What does HTTP stand for?</label>
@@ -47,25 +47,25 @@
          <fieldset>
                      <legend>Question 4</legend>
                      <label for="Q4">What came after HTTP 0.9?</label>
-                           <input type="radio" id="http1" name="after_http">
+                           <input type="radio" id="http1" name="after_http" value="HTTP 1.0" required>
                            <label for="http1">HTTP 1.0</label><br>
-                           <input type="radio" id="http3" name="after_http">
+                           <input type="radio" id="http3" name="after_http" value="HTTP/3">
                            <label for="http3">HTTP/3</label><br>
-                           <input type="radio" id="http6" name="after_http">
+                           <input type="radio" id="http6" name="after_http" value="HTTP/6">
                            <label for="http6">HTTP/6</label><br>
-                           <input type="radio" id="http2" name="after_http">
+                           <input type="radio" id="http2" name="after_http" value="HTTP/2">
                            <label for="http2">HTTP/2</label>
          </fieldset>
          <fieldset>
                      <legend>Question 5</legend>
                         <label for="Q5">What feature was implemented in HTTP/2?</label>
-                           <input type="radio" id="security" name="imp_feature">
+                           <input type="radio" id="security" name="imp_feature" value="Security">
                            <label for="security">Security</label><br>
-                           <input type="radio" id="cte" name="imp_feature">
+                           <input type="radio" id="cte" name="imp_feature" value="Chunked Transfer Encoding">
                            <label for="cte">Chunked Transfer Encoding</label><br>
-                           <input type="radio" id="bc" name="imp_feature">
+                           <input type="radio" id="bc" name="imp_feature" value="Better Caching">
                            <label for="bc">Better Caching</label><br>
-                           <input type="radio" id="hc" name="imp_feature">
+                           <input type="radio" id="hc" name="imp_feature" value="Header Compression required>
                            <label for="hc">Header Compression</label>
          </fieldset>
          <fieldset>
@@ -74,26 +74,26 @@
                            This feature prevented DoS and Man-in-the-Middle attacks.
                            Which feature is it?
                         </label>
-                           <input type="radio" id="api" name="which_feature">
+                           <input type="radio" id="api" name="which_feature" value="APIs">
                            <label for="api">APIs</label><br>
-                           <input type="radio" id="quic" name="which_feature">
+                           <input type="radio" id="quic" name="which_feature" value="QUIC" required>
                            <label for="quic">QUIC</label><br>
-                           <input type="radio" id="multi" name="which_feature">
+                           <input type="radio" id="multi" name="which_feature" value="Multiplexing">
                            <label for="multi">Multiplexing</label><br>
-                           <input type="radio" id="html" name="which_feature">
+                           <input type="radio" id="html" name="which_feature" value="HTML">
                            <label for="html">HTML</label>
          </fieldset>
          <fieldset>
                      <legend>Question 7</legend>
                         <label for="Q7">Choose all that apply that fall under HTTP/2</label>
-                           <input type="checkbox" id="rsp" name="fall_under">
+                           <input type="checkbox" id="rsp" name="fall_under" value="Response Splitting Protection">
                            <label for="rsp">Response Splitting Protection</label><br>
-                           <input type="checkbox" id="hc2" name="fall_under">
+                           <input type="checkbox" id="hc2" name="fall_under" value="Header Compression">
                            <label for="hc2">Header Compression</label><br>
-                           <input type="checkbox" id="cte2" name="fall_under">
-                           <label for="ctee">Chunked Transfer Encoding</label><br>
-                           <input type="checkbox" id="mp" name="fall_under">
-                           <label for="cte2">Multiplexing</label>
+                           <input type="checkbox" id="cte2" name="fall_under" value="Chunked Transfer Encoding>
+                           <label for="cte2">Chunked Transfer Encoding</label><br>
+                           <input type="checkbox" id="mp" name="fall_under" value="Multiplexing">
+                           <label for="mp">Multiplexing</label>
          </fieldset>
       <input type="submit" value="Submit">
                </form>
