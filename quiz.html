@@ -24,35 +24,80 @@
 
   <div class="question-container">
    <section>
-      <fieldset>
-         <h1>Self-Assessment Quiz for HTTp</h1>
-            <form action ="action_page.php">
-                  <label for="fname">Full Name:</label> <br>
-
-                  <legend>Question 1</legend>
-                     <label for="Q1">What does HTTP stand for?</label>
-                        <input type="text" id="Q1" name="Q1">
-                  <legend>Question 2</legend>
-                     <label for="Q2">When was HTTP created?</label>
-                        <input type="text" id="Q2" name="Q2">
-                  <legend>Question 3</legend>
-                     <label for="Q3">What was the "first" version of HTTP?</label>
-                        <input type="text" id="Q3" name="Q3">
-                  <legend>Question 4</legend>
-                   <label for="Q4">When was HTTP created?</label>
-                        <input type="radio" id="" name="Q4">
-                  <legend>Question 5</legend>
-                     <label for="Q5">When was HTTP created?</label>
-                        <input type="radio" id="Q5" name="Q5">
-                  <legend>Question 6</legend>
-                     <label for="Q6">When was HTTP created?</label>
-                        <input type="radio" id="Q6" name="Q6">
-                  <legend>Question 7</legend>
-                     <label for="Q7">When was HTTP created?</label>
-                        <input type="checkbox" id="Q7" name="Q7">
-            </form>
-      </fieldset>
-   </section>
+      <h1>Self-Assessment Quiz for HTTP</h1>
+         
+               <form action ="action_page.php">
+                     <label for="fname">Full Name:</label> <br>
+                         <input type="text" id="Q1" name="Q1">
+         <fieldset>
+                     <legend>Question 1</legend>
+                        <label for="Q1">What does HTTP stand for?</label>
+                           <input type="text" id="Q1" name="Q1">
+         </fieldset>
+         <fieldset>
+                     <legend>Question 2</legend>
+                        <label for="Q2">When was HTTP created?</label>
+                           <input type="text" id="Q2" name="Q2">
+         </fieldset>
+         <fieldset>
+                     <legend>Question 3</legend>
+                        <label for="Q3">What was the "first" version of HTTP?</label>
+                           <input type="text" id="Q3" name="Q3">
+         </fieldset>
+         <fieldset>
+                     <legend>Question 4</legend>
+                     <label for="Q4">What came after HTTP 0.9?</label>
+                           <input type="radio" id="http1" name="after_http">
+                           <label for="http1">HTTP 1.0</label><br>
+                           <input type="radio" id="http3" name="after_http">
+                           <label for="http3">HTTP/3</label><br>
+                           <input type="radio" id="http6" name="after_http">
+                           <label for="http6">HTTP/6</label><br>
+                           <input type="radio" id="http2" name="after_http">
+                           <label for="http2">HTTP/2</label>
+         </fieldset>
+         <fieldset>
+                     <legend>Question 5</legend>
+                        <label for="Q5">What feature was implemented in HTTP/2?</label>
+                           <input type="radio" id="security" name="imp_feature">
+                           <label for="security">Security</label><br>
+                           <input type="radio" id="cte" name="imp_feature">
+                           <label for="cte">Chunked Transfer Encoding</label><br>
+                           <input type="radio" id="bc" name="imp_feature">
+                           <label for="bc">Better Caching</label><br>
+                           <input type="radio" id="hc" name="imp_feature">
+                           <label for="hc">Header Compression</label>
+         </fieldset>
+         <fieldset>
+                     <legend>Question 6</legend>
+                        <label for="Q6">This option optimized security when enabled.
+                           This feature prevented DoS and Man-in-the-Middle attacks.
+                           Which feature is it?
+                        </label>
+                           <input type="radio" id="api" name="which_feature">
+                           <label for="api">APIs</label><br>
+                           <input type="radio" id="quic" name="which_feature">
+                           <label for="quic">QUIC</label><br>
+                           <input type="radio" id="multi" name="which_feature">
+                           <label for="multi">Multiplexing</label><br>
+                           <input type="radio" id="html" name="which_feature">
+                           <label for="html">HTML</label>
+         </fieldset>
+         <fieldset>
+                     <legend>Question 7</legend>
+                        <label for="Q7">Choose all that apply that fall under HTTP/2</label>
+                           <input type="checkbox" id="rsp" name="fall_under">
+                           <label for="rsp">Response Splitting Protection</label><br>
+                           <input type="checkbox" id="hc2" name="fall_under">
+                           <label for="hc2">Header Compression</label><br>
+                           <input type="checkbox" id="cte2" name="fall_under">
+                           <label for="ctee">Chunked Transfer Encoding</label><br>
+                           <input type="checkbox" id="mp" name="fall_under">
+                           <label for="cte2">Multiplexing</label>
+         </fieldset>
+               </form>
+         </fieldset>
+      </section>
  </div>
    <footer class="flex-container">
       <p>This is a class project for IT 3203.</p>
