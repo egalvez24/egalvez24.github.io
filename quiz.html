@@ -27,23 +27,23 @@
    <section>
       <h2>HTTP Quiz</h2>
          
-               <form action ="action_page.php">
+               <form id ="assessmentForm" onsubmit="submitForm(event)">
                      <label for="fname">Full Name:</label> <br>
-                         <input type="text" id="fname" name="fname">
+                         <input type="text" id="fname" name="fname" required>
          <fieldset>
                      <legend>Question 1</legend>
                         <label for="Q1">What does HTTP stand for?</label>
-                           <input type="text" id="Q1" name="Q1">
+                           <input type="text" id="Q1" name="Q1" required>
          </fieldset>
          <fieldset>
                      <legend>Question 2</legend>
                         <label for="Q2">When was HTTP created?</label>
-                           <input type="text" id="Q2" name="Q2">
+                           <input type="text" id="Q2" name="Q2" required>
          </fieldset>
          <fieldset>
                      <legend>Question 3</legend>
                         <label for="Q3">What was the "first" version of HTTP?</label>
-                           <input type="text" id="Q3" name="Q3">
+                           <input type="text" id="Q3" name="Q3" required>
          </fieldset>
          <fieldset>
                      <legend>Question 4</legend>
@@ -66,7 +66,7 @@
                            <label for="cte">Chunked Transfer Encoding</label><br>
                            <input type="radio" id="bc" name="imp_feature" value="Better Caching">
                            <label for="bc">Better Caching</label><br>
-                           <input type="radio" id="hc" name="imp_feature" value="Header Compression required">
+                           <input type="radio" id="hc" name="imp_feature" value="Header Compression" required>
                            <label for="hc">Header Compression</label>
          </fieldset>
          <fieldset>
@@ -98,6 +98,7 @@
          </fieldset>
       <input type="submit" value="Submit"><br>
       <input type="reset" value="Reset Quiz">
+      <p id="result"></p> 
                </form>
       </section>
  </div>

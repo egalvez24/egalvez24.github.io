@@ -204,11 +204,4 @@ div.question-container {
         gap: 2em;
 }
 
-button {
-        display: flex;
-        border-radius: 10px;
-        width: auto;
-        height: auto;
-        background-color: #dbd6cf;
-        
-}
+
