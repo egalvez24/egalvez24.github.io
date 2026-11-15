@@ -1,12 +1,17 @@
-let seconds = 600;
-const countdown = setInterval(() => {
-    console.log(seconds);
-    seconds--;
-    if (seconds < 0) {
-        clearInterval(countdown);
-        console.log("Time is up for you!");
-    }
-}   ,1000);
+let timer;
+function startTimer() {
+  timer = setTimeout(function() {
+    document.getElementById("demo").innerHTML = "Finished";
+  }, 600);
+}
+function stopTimer() {
+  clearTimeout(timer);
+  document.getElementById("demo").innerHTML = "Timer stopped";
+}
+function myDisplayer(text) {
+  let demo = document.getElementById("demo"); 
+  demo.innerHTML += text + "<br>";
+}
 
 function myFunction() {
     let fname=document.getElementById("fname").value;
@@ -20,58 +25,58 @@ function scoreQuiz() {
     let answer1 = document.getElementById("Q1").value;
         if (answer1.toLowerCase() == "hypertext transfer protocol") {
             score ++;
-            results += "Correct!";
+            results += "<br>Q1. Correct!</br>";
         } else {
-            results += "Wrong. The answer is Hypertext Transfer Protocol";
+            results += "<br>Q1. Wrong. The answer is Hypertext Transfer Protocol</br>";
     }
     let answer2 = document.getElementById("Q2").value;
         if (answer2 == "1991") {
             score ++;
-            results += "Correct!";
+            results += "<br>Q2. Correct!</br>";
         } else {
-            results += "Wrong.The answer is 1991";
+            results += "<br>Q2. Wrong! The answer is 1991</br>";
     }
     let answer3 = document.querySelector('input[name="after_http"]:checked');
         if (answer3 && answer3.value === "HTTP 1.0") {
             score ++;
-            results += "Correct!";
+            results += "<br>Q3. Correct!</br>";
         } else {
-            results += "Incorrect! It's HTTP 1.0";
+            results += "<br>Q3. Wrong! It's HTTP 1.0</br>";
         }
     let answer4 = document.querySelector('input[name="imp_feature"]:checked');
         if (answer4 && answer4.value === "Header Compression") {
             score ++;
-            results += "Correct!";
+            results += "<br>Q4. Correct!</br>";
         } else {
-            results += "Incorrect! It's Header Compression";
+            results += "<br>Q4. Wrong! It's Header Compression</br>";
         }
     let answer5 = document.querySelector('input[name="which_feature"]:checked');
         if (answer5 && answer5.value === "QUIC") {
             score ++;
-            results += "Correct!";
+            results += "<br>Q5. Correct!</br>";
 
         } else {
-            results += "Incorrect! It's QUIC";
+            results += "<br>Q5. Wrong! It's QUIC</br>";
         }
     let answer6 = document.querySelectorAll('input[name="fall_under"]:checked');
         if (answer6.length == 2 && answer6[0].value === "Header Compression" && answer6[1].value === "Multiplexing") {
             score ++;
-            results += "Correct!";
+            results += "<br>Q6. Correct!</br>";
         } else {
-            results += "Incorrect! It's Multiplexing and Header Compression";
+            results += "<br>Q6. Wrong! It's Multiplexing and Header Compression</br>";
         }
     return [score, results];
 }  
 
-function submitQuiz(event) {
+function submitQuiz(event) {    
         event.preventDefault();
         let result = scoreQuiz();
         let score = result[0];
         let results = result[1];
-        let time = Math.floor((Date.now() - startTime / 1000));
         let status = "Fail";
         if (score >=4) {
             status = "You Passed!";
         }
-        document.getElementById("result").innerHTML = status + " / " +  " Total Score: " + score + "/6 " + time + results;
+        document.getElementById("result").innerHTML = status + "<br>" + "</br>" + " Total Score: " + score + "/6 " +
+        "<br>" +  "</br>" + results;
     }
