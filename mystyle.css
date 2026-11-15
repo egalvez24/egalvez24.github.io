@@ -204,4 +204,16 @@ div.question-container {
         gap: 2em;
 }
 
+.correct {
+         background-color: rgb(136, 255, 179);
+         border: 3px solid rgb(136, 255, 179);
+         border-radius: 2px
+}
+
+.wrong {
+        background-color: rgb(255, 152, 136);
+        border: 3px solid rgb(255, 152, 136);
+        border-radius: 2px;
+}
+
 

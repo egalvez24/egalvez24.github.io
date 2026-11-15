@@ -25,7 +25,7 @@ function scoreQuiz() {
     let answer1 = document.getElementById("Q1").value;
         if (answer1.toLowerCase() == "hypertext transfer protocol") {
             score ++;
-            results += "<br>Q1. Correct!</br>";
+            results += "<p class=.correct><br>Q1. Correct!</br></p>";
         } else {
             results += "<br>Q1. Wrong. The answer is Hypertext Transfer Protocol</br>";
     }
