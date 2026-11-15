@@ -26,8 +26,9 @@
   <div class="question-container">
    <section>
       <h2>HTTP Quiz</h2>
-         
-               <form id ="assessmentForm" onsubmit="submitForm(event)">
+      <div>Timer: <span id="timer">10:00</span></div>
+      <button type="button">Click to Start!</button>   
+               <form onsubmit="submitQuiz(event)">
                      <label for="fname">Full Name:</label> <br>
                          <input type="text" id="fname" name="fname" required>
          <fieldset>
@@ -42,11 +43,6 @@
          </fieldset>
          <fieldset>
                      <legend>Question 3</legend>
-                        <label for="Q3">What was the "first" version of HTTP?</label>
-                           <input type="text" id="Q3" name="Q3" required>
-         </fieldset>
-         <fieldset>
-                     <legend>Question 4</legend>
                      <label for="Q4">What came after HTTP 0.9?</label>
                            <input type="radio" id="http1" name="after_http" value="HTTP 1.0" required>
                            <label for="http1">HTTP 1.0</label><br>
@@ -58,7 +54,7 @@
                            <label for="http2">HTTP/2</label>
          </fieldset>
          <fieldset>
-                     <legend>Question 5</legend>
+                     <legend>Question 4</legend>
                         <label for="Q5">What feature was implemented in HTTP/2?</label>
                            <input type="radio" id="security" name="imp_feature" value="Security">
                            <label for="security">Security</label><br>
@@ -70,7 +66,7 @@
                            <label for="hc">Header Compression</label>
          </fieldset>
          <fieldset>
-                     <legend>Question 6</legend>
+                     <legend>Question 5</legend>
                         <label for="Q6">This option optimized security when enabled.
                            This feature prevented DoS and Man-in-the-Middle attacks.
                            Which feature is it?
@@ -85,20 +81,18 @@
                            <label for="html">HTML</label>
          </fieldset>
          <fieldset>
-                     <legend>Question 7</legend>
+                     <legend>Question 6</legend>
                         <label for="Q7">Choose all that apply that fall under HTTP/2</label>
                            <input type="checkbox" id="rsp" name="fall_under" value="Response Splitting Protection">
                            <label for="rsp">Response Splitting Protection</label><br>
                            <input type="checkbox" id="hc2" name="fall_under" value="Header Compression">
                            <label for="hc2">Header Compression</label><br>
-                           <input type="checkbox" id="cte2" name="fall_under" value="Chunked Transfer Encoding">
-                           <label for="cte2">Chunked Transfer Encoding</label><br>
                            <input type="checkbox" id="mp" name="fall_under" value="Multiplexing">
                            <label for="mp">Multiplexing</label>
          </fieldset>
       <input type="submit" value="Submit"><br>
       <input type="reset" value="Reset Quiz">
-      <p id="result"></p> 
+      <div id="result"></div> 
                </form>
       </section>
  </div>
