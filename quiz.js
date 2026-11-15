@@ -1,4 +1,8 @@
-let startTime = Date.now()
+let startTime;
+document.getElementById("startButton").onclick = function() {
+    startTime = Date.now();
+    alert("The Quiz Has Begun!")
+}
 
 function myFunction() {
     let fname=document.getElementById("fname").value;
