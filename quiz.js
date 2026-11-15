@@ -1,8 +1,12 @@
-let startTime;
-document.getElementById("startButton").onclick = function() {
-    startTime = Date.now();
-    alert("The Quiz Has Begun!")
-}
+let seconds = 600;
+const countdown = setInterval(() => {
+    console.log(seconds);
+    seconds--;
+    if (seconds < 0) {
+        clearInterval(countdown);
+        console.log("Time is up for you!");
+    }
+}   ,1000);
 
 function myFunction() {
     let fname=document.getElementById("fname").value;
@@ -50,7 +54,7 @@ function scoreQuiz() {
             results += "Incorrect! It's QUIC";
         }
     let answer6 = document.querySelectorAll('input[name="fall_under"]:checked');
-        if (answer6.length == 2 && answer6[0].value === "Multiplexing" && answer6[1].value === "Header Compression") {
+        if (answer6.length == 2 && answer6[0].value === "Header Compression" && answer6[1].value === "Multiplexing") {
             score ++;
             results += "Correct!";
         } else {
@@ -62,12 +66,12 @@ function scoreQuiz() {
 function submitQuiz(event) {
         event.preventDefault();
         let result = scoreQuiz();
-        let results = [1];
-        let score = [0];
+        let score = result[0];
+        let results = result[1];
         let time = Math.floor((Date.now() - startTime / 1000));
         let status = "Fail";
         if (score >=4) {
-            text = "You Passed!";
+            status = "You Passed!";
         }
-        document.getElementById("result").innerHTML = status + "Total Score: " + score + "/6 " + time + results;
+        document.getElementById("result").innerHTML = status + " / " +  " Total Score: " + score + "/6 " + time + results;
     }
