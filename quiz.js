@@ -1,17 +1,4 @@
-let timer;
-function startTimer() {
-  timer = setTimeout(function() {
-    document.getElementById("demo").innerHTML = "Finished";
-  }, 600);
-}
-function stopTimer() {
-  clearTimeout(timer);
-  document.getElementById("demo").innerHTML = "Timer stopped";
-}
-function myDisplayer(text) {
-  let demo = document.getElementById("demo"); 
-  demo.innerHTML += text + "<br>";
-}
+
 
 function myFunction() {
     let fname=document.getElementById("fname").value;
