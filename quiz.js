@@ -1,4 +1,7 @@
-
+function myTimer() {
+    let timer = 600;
+    document.getElementById("button").innerHTML = timer;
+}
 
 function myFunction() {
     let fname=document.getElementById("fname").value;
