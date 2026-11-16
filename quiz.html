@@ -21,11 +21,13 @@
         <li><a href="references.html">References and Sources</a></li>
     </ul>
  </nav>
+ 
+//the idea behind this code is to create a simple quiz that takes the user answers and presents them if they're right.
 
   <div class="question-container">
    <section>
       <h2>HTTP Quiz</h2>
-      <button type="button">Click To Start!</button>
+      <button type="button" id="button" onclick="myTimer()">
                <form id="quizForm" onsubmit="submitQuiz(event)">
                      <label for="fname">Full Name:</label> <br>
                          <input type="text" id="fname" name="fname" required>
