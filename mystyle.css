@@ -207,13 +207,17 @@ div.question-container {
 .correct {
          background-color: rgb(136, 255, 179);
          border: 3px solid rgb(136, 255, 179);
-         border-radius: 2px
+         border-radius: 5px;
+         text-align: center;
+         border-width: 5px 5px;
+        padding: 2px;
 }
 
 .wrong {
         background-color: rgb(255, 152, 136);
         border: 3px solid rgb(255, 152, 136);
-        border-radius: 2px;
+        border-radius: 5px;
+        text-align: center;
+        border-width: 5px 5px;
+        padding: 2px;
 }
-
-

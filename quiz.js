@@ -25,45 +25,45 @@ function scoreQuiz() {
     let answer1 = document.getElementById("Q1").value;
         if (answer1.toLowerCase() == "hypertext transfer protocol") {
             score ++;
-            results += "<p class=.correct><br>Q1. Correct!</br></p>";
+            results += "<p class=correct><br>Q1. Correct! The answer is HyperText Transfer Protocol!</br></p>";
         } else {
-            results += "<br>Q1. Wrong. The answer is Hypertext Transfer Protocol</br>";
+            results += "<p class=wrong><br>Q1. Wrong. The answer is Hypertext Transfer Protocol</br></p>";
     }
     let answer2 = document.getElementById("Q2").value;
         if (answer2 == "1991") {
             score ++;
-            results += "<br>Q2. Correct!</br>";
+            results += "<p class=correct><br>Q2. Correct! The answer is 1991!</br></p>";
         } else {
-            results += "<br>Q2. Wrong! The answer is 1991</br>";
+            results += "<p class=wrong><br>Q2. Wrong! The answer is 1991</br></p>";
     }
     let answer3 = document.querySelector('input[name="after_http"]:checked');
         if (answer3 && answer3.value === "HTTP 1.0") {
             score ++;
-            results += "<br>Q3. Correct!</br>";
+            results += "<p class=correct><br>Q3. Correct! The answer is HTTP 1.0!</br></p>";
         } else {
-            results += "<br>Q3. Wrong! It's HTTP 1.0</br>";
+            results += "<p class=wrong><br>Q3. Wrong! It's HTTP 1.0</br></p>";
         }
     let answer4 = document.querySelector('input[name="imp_feature"]:checked');
         if (answer4 && answer4.value === "Header Compression") {
             score ++;
-            results += "<br>Q4. Correct!</br>";
+            results += "<p class=correct><br>Q4. Correct! The answer is Header Compression</br></p>";
         } else {
-            results += "<br>Q4. Wrong! It's Header Compression</br>";
+            results += "<p class=wrong><br>Q4. Wrong! It's Header Compression!</br></p>";
         }
     let answer5 = document.querySelector('input[name="which_feature"]:checked');
         if (answer5 && answer5.value === "QUIC") {
             score ++;
-            results += "<br>Q5. Correct!</br>";
+            results += "<p class=correct><br>Q5. Correct! The answer is QUIC!</br></p>";
 
         } else {
-            results += "<br>Q5. Wrong! It's QUIC</br>";
+            results += "<p class=wrong><br>Q5. Wrong! It's QUIC</br></p>";
         }
     let answer6 = document.querySelectorAll('input[name="fall_under"]:checked');
         if (answer6.length == 2 && answer6[0].value === "Header Compression" && answer6[1].value === "Multiplexing") {
             score ++;
-            results += "<br>Q6. Correct!</br>";
+            results += "<p class=correct><br>Q6. Correct! The answer is Header Compression and Multiplexing!</br></p>";
         } else {
-            results += "<br>Q6. Wrong! It's Multiplexing and Header Compression</br>";
+            results += "<p class=wrong><br>Q6. Wrong! It's Header Compression and Multiplexing</br></p>";
         }
     return [score, results];
 }  
